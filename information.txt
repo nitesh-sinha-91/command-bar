@@ -12,7 +12,7 @@ Command - GOTO-PROPOSAL-FOR-CLIENT
 This command should be executed whenever a user wants to see/nagivate to the proposal or list of proposal made for a client for a project.
 
 Command - GOTO-MY-ACTIVE-SCOPE
-This command wiill be executed whenever a user wants to see/nagivate to scope, active scope or boq or bill of quantity or amount or project total for a project.
+This command will be executed whenever a user wants to see/nagivate to scope, active scope or boq or bill of quantity or amount or project total for a project.
 
 Command - GOTO-INCOMING-ORDER
 This command should be executed whenever a user wants to see/nagivate incoming order or order for a project.
@@ -68,22 +68,25 @@ Command - CREATE-OUTGOING-ORDER
 This command should be executed whenever a user wants to create outgoing order.
 
 Command - EXPORT-RECCE-REPORT
-This command should be executed whenever a user wants to download/export reports generated on recce of a project.
+This command should be executed whenever a user wants to download/export/fetch reports generated on recce of a project.
 
 Command - EXPORT-MY-SCOPE-ELEMENTS
-This command should be executed whenever a user wants to download/export scope element or my scope elements or anything releted to elements of a project
+This command should be executed whenever a user wants to download/export/fetch scope element or my scope or boq or anything releted to elements of a project
 
 Command - EXPORT-SNAGS
-This command should be executed whenever a user wants to download/export Snags related to any project.
+This command should be executed whenever a user wants to download/export/fetch Snags related to any project.
 
 Command - EXPORT-ORDER-ELEMENTS
-This command should be executed whenever a user wants to download/export outgoing order elements of a project.
+This command should be executed whenever a user wants to download/export/fetch outgoing order elements of a project.
 
 Command - EXPORT-DPR-LATEST
-This command should be executed whenever a user wants to download/export Latest Daily Progress Report (DPR) for any project.
+This command should be executed whenever a user wants to download/export/fetch Latest Daily Progress Report,dpr,daily update for any project.
 
 Command - EXPORT-DPR-COMPLETE
-This command should be executed whenever a user wants to download/export Complete Daily Progress Report (DPR) for any project.
+This command should be executed whenever a user wants to download/export/fetch Complete Daily Progress Report,dpr, daily update for any project.
+
+Command - REMINDER
+This command should be executed whenever a user wants to set a reminder or get a notification about something
 
 Command - NA
 This command should be executed whenever none of the above commands match
