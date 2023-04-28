@@ -12,7 +12,7 @@ Command - GOTO-PROPOSAL-FOR-CLIENT
 This command should be executed whenever a user wants to see/nagivate to the proposal or list of proposal made for a client for a project.
 
 Command - GOTO-MY-ACTIVE-SCOPE
-This command wiill be executed whenever a user wants to see/nagivate to scope active scope or my active scope or boq or bill of quantity or amount or project total for a project.
+This command wiill be executed whenever a user wants to see/nagivate to scope, active scope or boq or bill of quantity or amount or project total for a project.
 
 Command - GOTO-INCOMING-ORDER
 This command should be executed whenever a user wants to see/nagivate incoming order or order for a project.
