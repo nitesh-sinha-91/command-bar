@@ -44,7 +44,7 @@ Command - GOTO-SNAGS
 This command should be executed whenever a user want to see/navigate snags, snag list, rectification list. Snags that have to be completed to ensure a 100% completion of the projects can be created and tracked here.
 
 Command - CREATE-PROJECT
-This command should be executed whenever a user wants to create/add a new project.
+This command should be executed whenever a user wants to create/add a new project. If user intent is create but we don't know what he wants to create then also this command will be executed.
 
 Command - CREATE-CUSTOM-ELEMENT
 This command should be executed whenever a user want to create/add custom or item/element in active scope, scope.

@@ -57,8 +57,9 @@ def get_command_bar_data(request):
         res2 = ""
     if "don't know" in res:
         res2 = ""
-    if res1 == "NA" and len(res2) > 0:
-        res1 = "GOTO-PROJECT-DETAILS"
+    if res == "NA" and len(res2) > 0:
+        res = "GOTO-PROJECT-DETAILS"
+        
     print(res2)
     return Response({
         "command": res,
