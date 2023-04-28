@@ -35,12 +35,13 @@ def get_command_bar_data(request):
     text = request.GET.get('text')
     # agent = create_csv_agent(
     #         OpenAI(temperature=0),
-    #         "command-bar.csv",
+    #         "project_name.csv",
     #         verbose=True
     #     )
-    template = f"""Tell me the relavant command for this input: "{text}". Return only one command name or NA."""
-    # res = agent.run(template)
-    template2 = f'Tell me text that can be a relavent project name or id hidden inside this input: "{text}". Return only project name or id  if you can find else return NA'
+    template = f"""This text will have a relevant command. Fetch it and return it to me: "{text}". Return only one command name or NA."""
+    template2 = f'This text will have a project name within it, it could be a single word or couple of words. It will not be similar to the command and mostly will not be an English word. Fetch it and return it to me: "{text}". Return only project name if you can find else return NA'
+    template3 = f'Return me the text that is present in any project names and in this input "{text}". If it does not matches return NA'
+
     vector_db = Chroma(
         persist_directory=persist_dir,
         embedding_function=OpenAIEmbeddings()
@@ -50,14 +51,19 @@ def get_command_bar_data(request):
     qa = RetrievalQA.from_chain_type(llm=OpenAI(model_name="gpt-4", temperature=0.7), chain_type="stuff", retriever=retriever)
     res = qa.run(template)
     res2 = qa.run(template2)
-    if res2 == " NA":
+    # res3 = agent.run(template3)
+
+    if res2 == "NA":
         res2 = ""
     if "don't know" in res:
         res2 = ""
+    if res1 == "NA" and len(res2) > 0:
+        res1 = "GOTO-PROJECT-DETAILS"
     print(res2)
     return Response({
         "command": res,
-        "text": res2
+        "text": res2,
+        # "text3": res3
     }, status=HTTP_200_OK)
         
 

@@ -1,7 +1,9 @@
 
+Command - GOTO-PROJECT-DETAILS
+This command should be executed whenever a user enters just a project name without any of the below information or ask for details or information or info or data of a project
+
 Command - GOTO-RECCE 
-This command should be executed whenever a user wants to see/navigate to the recce report for any project. Recce includes measurements, observations,
-photos and findings done on the construction site.
+This command should be executed whenever a user wants to see/navigate to the recce, recce report, survey, site survey for any project.
 
 Command - GOTO-DESIGN
 This command should be executed whenever a user wants to see/navigate to the design file made by designers for any project.
@@ -39,7 +41,7 @@ Command - GOTO-VENDOR-WISE-PROGRESS
 This command should be executed whenever a user want to see/navigate vendor wise progress. Multiple orders that were sent to multiple vendors, can be tracked here filtered out on a vendor basis.
 
 Command - GOTO-SNAGS
-This command should be executed whenever a user want to see/navigate snags.Snags that have to be completed to ensure a 100% completion of the projects can be created and tracked here.
+This command should be executed whenever a user want to see/navigate snags, snag list, rectification list. Snags that have to be completed to ensure a 100% completion of the projects can be created and tracked here.
 
 Command - CREATE-PROJECT
 This command should be executed whenever a user wants to create/add a new project.
