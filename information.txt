@@ -14,6 +14,7 @@ This command wiill be executed whenever user wants to see/nagivate to active sco
 
 Command - GOTO-INCOMING-ORDER
 This command will be executed whenever user wants to see/nagivate incoming order or order for a project.
+When user wants to go to orders then also this command will be executed.
 
 Command - GOTO-PROPOSAL-FROM-VENDOR
 This command will be executed whenever user wants to see/navigate proposal from vendor. proposal from vendor is way where client receives proposal from vendor side.
@@ -31,7 +32,8 @@ Command - GOTO-PROGRESS-UPDATE
 This command will be executed whenever user wants to see/navigate project update. An item wise update on all the items in the scope of the project that are measured on a progress bar.
 
 Command - GOTO_PROGRESS_REPORT
-This command will be executed whenever user want to see/navigate progress report,Latest Daily Progress Report (DPR), Complete Daily Progress Report (DPR), daily progress report, daily update or updated. A daily report of the updates that happened in the day uploaded with manpower, blockers and mandatory images
+This command will be executed whenever a user wants to see/navigate to the progress report,DPR, Work Progress, Latest Daily Progress Report (DPR), Complete Daily Progress Report (DPR).
+This command will also be executed when a user wants to see the work progress
 
 Command - GOTO-VENDOR-WISE-PROGRESS
 This command will be executed whenever user want to see/navigate vendor wise progress. Multiple orders that were sent to multiple vendors, can be tracked here filtered out on a vendor basis.

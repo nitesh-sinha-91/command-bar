@@ -38,7 +38,7 @@ def get_command_bar_data(request):
     #         "command-bar.csv",
     #         verbose=True
     #     )
-    template = f'Tell me the relavant command for this input: "{text}". Return only one command name or NA. If multiple commands are possible then return the command with highest probability.'
+    template = f"""Tell me the relavant command for this input: "{text}". Return only one command name or NA."""
     # res = agent.run(template)
     template2 = f'Tell me text that can be a relavent project name or id hidden inside this input: "{text}". Return only project name or id  if you can find else return NA'
     vector_db = Chroma(
@@ -47,7 +47,7 @@ def get_command_bar_data(request):
     )
     retriever = vector_db.as_retriever()
     # search_text = 
-    qa = RetrievalQA.from_chain_type(llm=OpenAI(), chain_type="stuff", retriever=retriever)
+    qa = RetrievalQA.from_chain_type(llm=OpenAI(model_name="gpt-4", temperature=0.7), chain_type="stuff", retriever=retriever)
     res = qa.run(template)
     res2 = qa.run(template2)
     if res2 == " NA":
@@ -68,5 +68,16 @@ user may provide some text that we need to search for that actionItemName. Try t
 navigate me to xyz project recc. Then GO_TO is command, xyz is search text and recce is actionItemName.
 Always return ans in this format - command,actionItemName,searchText. If you can't find any relevant result then return NA.
 User text is - 
+
+template2 = 
+    Tell me text that can be a relavent project name or id hidden inside this input: "{text}". Return only project name or id  if you can find else return NA.
+    For Example:
+    prompt: "go to snag module in test", response: "test"
+    prompt: "go to boq in xyz", response: "xyz"
+    prompt: "project test open snag module", response: "test"
+    prompt: "project neeman hydrabad open snag module", response: "neeman hydrabad"
+    prompt: "in abcdefg go to snags", response "abcdefg"
+    prompt: "of chennai open design page", response: "chennai"
+    prompt: "show me design of pantaloon", response: "pantaloon"
 
 """
