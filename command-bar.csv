@@ -1,0 +1,36 @@
+    SNO,COMMAND,actionItemName,DESCRIPTION,            Keywords
+1,GO_TO,RECCE,"Record all details of the site, including measurements, observations,
+photos and findings. This will take you to the Recce screen of a project","survey,measurements,findings,investigation,prilmary site reports, 
+site report, photo"
+2,GO_TO,DESIGN,"Manage all your design files in a single place with multiformat design upload, version history and status tracking. This will show you all the design files that are uploaded in this project","layout,3d,2d,floor plan, blueprint,plan, designs, makeover, pattern"
+3,GO_TO,PROPOSAL_FOR_CLIENT,Prepare a formatted item list from the scope of the project that you can share with your client for them to review. This is a proposal that you made for the client,"proposal for client, offer, proposition, "
+4,GO_TO,MY_ACTIVE_SCOPE,List of all items which is your complete project scope that you will need inorder to execute the project to also get an estimate for the same,"My scope,scope,boq, amount, project total, line items in project,
+ bills of quantitiy"
+5,GO_TO,INCOMING_ORDER,Manage and track all incoming orders that are received from the client with respect to the project. You will see all orders that need to be worked upon by the vendor here,incoming orders
+6,GO_TO,PROPOSAL_FROM_VENDOR,Manage multiple proposals that you get from multiple vendors in one single place as a client. ,proposal sent from vendor
+7,GO_TO,OUTGOING_ORDER,Orders that are sent out to all your vendors for that project are tracked here. You can see the total orders that you sent out to different vendors for this project here,outgoing orders
+8,GO_TO,VENDOR_WISE_SCOPE,"Multiple vendors working on a project will have a different scope of work assigned to themselves, that can be viewed here","vendor wise scope, work for the vendor, individual vendor work
+ tracking"
+9,GO_TO,PROJECT_SCHEDULE,A schedule of the project journey that is split item wise with targetted dates and a gantt chart view. ,"project dates, project schedule, excel format, gantt chart"
+10,GO_TO,PROGRESS_UPDATE,An item wise update on all the items in the scope of the project that are measured on a progress bar. This shows the list of all items in the BOQ and their progress is tracked here,"item wise update, line items update, progress bar"
+11,GO_TO,PROGRESS_REPORT,"A daily report of the updates that happened in the day uploaded with manpower, blockers and mandatory images. This shows the daily updates with manpower, blockers, and images","daily update, dpr, daily progress report, updates"
+12,GO_TO,VENDOR_WISE_PROGRESS,"Multiple orders that were sent to multiple vendors, can be tracked here filtered out on a vendor basis. This will show the progress on an individual vendor basis","vendor wise update, vendor tracking, vendor progress"
+13,GO_TO,SNAGS,Snags that have to be completed to ensure a 100% completion of the projects can be created and tracked here. Here you can see and manage all the snags of your project,"Snags, recification, errors, final changes, final cleaning "
+14,CREATE,PROJECT,,
+15,CREATE,VENDOR,when user want to create brand in R'dash then he will click on create vendor.in R'dash,
+16,CREATE,RECCE,"Recce is the process of collecting site data, such as measurements, 
+observations, and photos, to inform project planning and execution. when 
+wants to create recce in R'dash.",
+17,CREATE,BRAND,when user wants to create new brand in R'dash.,
+18,CREATE,ITEM_IN_SCOPE / ACTIVE_SCOPE,when user wants to  create item in scope or active scope in R'dash,
+19,CREATE,PROPOSAL,"when user want to send proposal to clicent then he will create proposal
+in R'dash.",
+20,CREATE,INCOMING ORDER,when user wants to create incoming order.,
+21,CREATE,OUTGOING ORDER,when user wants to create outgoing order in R'dash,
+22,CREATE,ADD_SNAGS / SNAGS,when user want to add snags in R'dash.,
+23,EXPORT,RECCE_REPORTS,when user wants to export recce report in R'dash.,
+24,EXPORT,MY_SCOPE_ELEMENTS,When user wants to export my scope elements in R'dash.,
+25,EXPORT,DPR_LATEST_REPORT,When user wants to export dpr latest report in R'dash.,
+26,EXPORT,DPR_COMPLETE_REPORT,when user wants to export dpr complete report in R'dash.,
+27,EXPORT,SNAG_LIST,when user wants to export all snag list present in R'dash.,
+28,EXPORT,ORDER_ELEMENTS,when user wants to exports elments in R'dash.,
