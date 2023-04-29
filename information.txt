@@ -1,6 +1,7 @@
 
 Command - GOTO-PROJECT-DETAILS
 This command should be executed whenever a user enters just a project name without any of the below information or ask for details or information or info or data of a project
+If none of command matches to user need and user message has intent of going somewhere then this command should be executed.
 
 Command - GOTO-RECCE 
 This command should be executed whenever a user wants to see/navigate to the recce, recce report, survey, site survey for any project.
