@@ -68,22 +68,22 @@ Command - CREATE-OUTGOING-ORDER
 This command should be executed whenever a user wants to create outgoing order.
 
 Command - EXPORT-RECCE-REPORT
-This command should be executed whenever a user wants to download/export reports generated on recce of a project.
+This command should be executed whenever a user wants to download/export/generate recce, recce,reports or reports generated on recce of a project.
 
 Command - EXPORT-MY-SCOPE-ELEMENTS
-This command should be executed whenever a user wants to download/export scope element or my scope elements or anything releted to elements of a project
+This command should be executed whenever a user wants to download/export/generate scope element or my scope elements or anything releted to elements of a project
 
 Command - EXPORT-SNAGS
-This command should be executed whenever a user wants to download/export Snags related to any project.
+This command should be executed whenever a user wants to download/export/generate Snags related to any project.
 
 Command - EXPORT-ORDER-ELEMENTS
-This command should be executed whenever a user wants to download/export outgoing order elements of a project.
+This command should be executed whenever a user wants to download/export/generate outgoing order elements of a project.
 
 Command - EXPORT-DPR-LATEST
-This command should be executed whenever a user wants to download/export Latest Daily Progress Report (DPR) for any project.
+This command should be executed whenever a user wants to download/export/generate dpr, Latest Daily Progress Report (DPR) for any project.
 
 Command - EXPORT-DPR-COMPLETE
-This command should be executed whenever a user wants to download/export Complete Daily Progress Report (DPR) for any project.
+This command should be executed whenever a user wants to download/export/generate complete dpr, Complete Daily Progress Report (DPR) for any project.
 
 Command - NA
 This command should be executed whenever none of the above commands match

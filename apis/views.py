@@ -9,10 +9,10 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.document_loaders import TextLoader
 from langchain.chains import RetrievalQA
 from langchain.agents.agent_toolkits.openapi import planner
-
 from rest_framework.decorators import api_view
 import openai
 import os
+
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 persist_dir = 'command_bar_db'
@@ -41,18 +41,17 @@ def get_command_bar_data(request):
     template = f"""This text will have a relevant command. Fetch it and return it to me: "{text}". Return only one command name or NA."""
     template2 = f'This text will have a project name within it, it could be a single word or couple of words. It will not be similar to the command and mostly will not be an English word. Fetch it and return it to me: "{text}". Return only project name if you can find else return NA'
     template3 = f'Return me the text that is present in any project names and in this input "{text}". If it does not matches return NA'
-
+  
     vector_db = Chroma(
         persist_directory=persist_dir,
         embedding_function=OpenAIEmbeddings()
     )
     retriever = vector_db.as_retriever()
-    # search_text = 
     qa = RetrievalQA.from_chain_type(llm=OpenAI(model_name="gpt-4", temperature=0.7), chain_type="stuff", retriever=retriever)
     res = qa.run(template)
     res2 = qa.run(template2)
-    # res3 = agent.run(template3)
-
+    res2 = res2.replace('text is', '')        
+    res2 = res2.replace('\"', '')
     if res2 == "NA":
         res2 = ""
     if "don't know" in res:
@@ -60,11 +59,9 @@ def get_command_bar_data(request):
     if res == "NA" and len(res2) > 0:
         res = "GOTO-PROJECT-DETAILS"
         
-    print(res2)
     return Response({
         "command": res,
         "text": res2,
-        # "text3": res3
     }, status=HTTP_200_OK)
         
 
